@@ -5,21 +5,21 @@
 
 int main (int argc, char *argv[])
 {
-    char **parsed=NULL;
+	char **parsed=NULL;
 	FILE *in,*out;
-    int numberOfFields;
+	int numberOfFields;
 	char *line=NULL;
-    int i;
+	int i;
 	size_t len = 0;
-    ssize_t read;
+	ssize_t read;
 	char *buffer=NULL;
 
 	/* Open the files */
-    in = fopen (argv[1], "r");
+	in = fopen (argv[1], "r");
 	out = fopen (argv[2], "wb");
 
-    if (in == NULL)
-        exit(EXIT_FAILURE);
+	if (in == NULL)
+		exit(EXIT_FAILURE);
 
 	if (out == NULL)
 		exit(EXIT_FAILURE);
