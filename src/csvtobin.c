@@ -35,7 +35,7 @@ int main (int argc, char *argv[])
    		}
 
 		/* Make Space */	
-		buffer = malloc (numberOfFields+1);
+		buffer = malloc (numberOfFields);
 
 		/* Fill it! */
    		for (i=0;i<numberOfFields;i++)
